@@ -1,0 +1,25 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/*.db
+backend/expense_tracker.db
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+npm-debug.log
+yarn-error.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
