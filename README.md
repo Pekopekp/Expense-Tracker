@@ -62,16 +62,7 @@ A full-stack, aesthetically premium web application built with **Next.js (App Ro
 
 ---
 
-## 🔒 GitHub Upload & Secrets Guide
 
-When uploading this project to GitHub, **never upload your actual `.env` files or your local database (`expense_tracker.db`)!**
-
-1. **Ensure `.gitignore` is correct:**
-   Both `frontend/` and `backend/` directories already have `.gitignore` files that prevent `.env` and `.db` files from being tracked.
-2. **Push to GitHub:**
-   Because we created `.env.example` and `.env.local.example`, anyone cloning your repository will see exactly what environment variables they need to create, without seeing your actual private secrets.
-3. **Production Deployment Secrets:**
-   If you deploy this app (e.g., to Vercel for the frontend, or Render/Railway for the backend):
    - In the hosting provider's dashboard, go to the "Environment Variables" section.
    - Add `NEXT_PUBLIC_API_URL` to your frontend host.
    - Add `SECRET_KEY` and `DATABASE_URL` (if using a production database like PostgreSQL instead of SQLite) to your backend host.
